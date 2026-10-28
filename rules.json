@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "Accept", "operation": "set", "value": "image/*" }
+      ]
+    },
+    "condition": {
+      "requestDomains": ["i.redd.it", "preview.redd.it"],
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

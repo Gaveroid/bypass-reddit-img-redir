@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Bypass Reddit image redirect",
+    "version": "1.0",
+    "permissions": ["declarativeNetRequest"],
+    "host_permissions": [
+        "https://i.redd.it/*",
+        "https://preview.redd.it/*"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {"id": "accept_image", "enabled": true, "path": "rules.json"}
+        ]
+    }
+}
